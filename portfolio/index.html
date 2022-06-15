@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto fw-bold font-monospace">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#about">About</a>
@@ -115,7 +115,7 @@
                           </div>
                         </div>
                         <div class="col-md-4 mt-2">
-                          <button class="btn btn-warning text-white px-5 py-2 float-start">Contact</button>
+                          <button type="button" class="btn btn-warning text-white px-5 py-2 float-start"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Contact</button>
                         </div>
                         <div class="col-md-4"></div>
                       </div>
@@ -236,16 +236,71 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-3"></div>
                 <div class="col-md-6">
                     <form action="">
+                        <div class="card contact-me p-4">
+                            <div class="card-body">
+                              <div class="row">
+                                <!-- <div class="col-md-4"></div> -->
+                                <div class="col-md-12">
+                                  <p class="card-text font-monospace">
+                                    My name is <input type="text" class="form-control"> and I'm with
+                                    <input type="text" class="form-control">. I am in need of a partner to assist me
+                                    with <input type="text" class="form-control">, with a goal of having that
+                                    completed or near <input type="date" class="form-control">. I am looking to
+                                    to stay around a budget of <input type="text" class="form-control">. You can reach me at
+                                    <input type="email" class="form-control"> to get the conversation started. Thanks!
+                                  </p>
+                                  <a href="" class="btn btn-success mt-3 float-end">Submit</a>
+                                </div>
+                                <!-- <div class="col-md-4"></div> -->
+                              </div>
 
+                            </div>
+                          </div>
                     </form>
                 </div>
+                <div class="col-md-3"></div>
             </div>
         </div>
     </section>
     <!-- contart section -->
     
+
+    <!-- modal -->
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Message Me</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form action="">
+                <div class="form-group">
+                  <label for="">Name</label>
+                  <input type="text" class="form-control" placeholder="Your Full Name">
+                </div>
+                <div class="form-group">
+                  <label for="">Email</label>
+                  <input type="email" class="form-control" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <label for="">Message</label>
+                  <textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                </div>
+                <p class="small mt-1"><span class="text-danger mark">Note:</span> Please don't forget to write your email so I can reply you. Thanks</p>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- modal -->
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
