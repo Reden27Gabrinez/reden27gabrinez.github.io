@@ -2,7 +2,7 @@
 
 #PORTFOLIO
 
-# reden27gabrinez.github.io/portfolio
+#  https://reden27gabrinez.github.io/portfolio/
 
 #Social Media Accounts
 
