@@ -1,8 +1,6 @@
 # reden27gabrinez.github.io
 
-#PORTFOLIO
-
-#  https://reden27gabrinez.github.io/portfolio/
+#PORTFOLIO | https://reden27gabrinez.github.io/portfolio/
 
 #Social Media Accounts
 
