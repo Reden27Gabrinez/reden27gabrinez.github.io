@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Protected Site"
+AuthUserFile https://reden27gabrinez.github.io/.htpasswd
+require valid-user
