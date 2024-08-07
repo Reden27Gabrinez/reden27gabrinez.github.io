@@ -1,26 +1,68 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Dialog - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#dialog" ).dialog();
-  } );
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        input[type="password"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-<body oncontextmenu="return false">
- 
-<div id="dialog" title="Basic dialog">
-    <input type="password" class="form-control">
-</div>
- 
- 
+<body>
+    <div class="container">
+        <h2>Enter Password</h2>
+        <form action="../portfolio/requirements/company/serino.htm" method="post" onsubmit="return checkPassword()">
+            <input type="password" id="password" placeholder="Enter Password" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            var correctPassword = "reden"; // Replace with your desired password
+
+            if (password === correctPassword) {
+                return true; // Allow form submission
+            } else {
+                alert("Incorrect password. Please try again.");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
 </body>
 </html>
